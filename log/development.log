@@ -2346,3 +2346,27 @@ Processing by BooksController#index as HTML
 Completed 200 OK in 235ms (Views: 185.6ms | ActiveRecord: 3.5ms | Allocations: 49505)
 
 
+Started GET "/books" for 172.17.0.1 at 2023-09-13 02:21:09 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+  [1m[36mActiveRecord::SchemaMigration Pluck (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by BooksController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/index.html.erb within layouts/application
+  [1m[36mBook Load (0.7ms)[0m  [1m[34mSELECT "books".* FROM "books"[0m
+  ↳ app/views/books/index.html.erb:6
+  Rendered books/index.html.erb within layouts/application (Duration: 9.5ms | Allocations: 1852)
+  Rendered layout layouts/application.html.erb (Duration: 14.8ms | Allocations: 4266)
+Completed 200 OK in 70ms (Views: 20.3ms | ActiveRecord: 4.9ms | Allocations: 14847)
+
+
+Started GET "/books/new" for 172.17.0.1 at 2023-09-13 02:21:15 +0000
+Cannot render console from 172.17.0.1! Allowed networks: 127.0.0.0/127.255.255.255, ::1
+Processing by BooksController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering books/new.html.erb within layouts/application
+  Rendered books/_form.html.erb (Duration: 8.6ms | Allocations: 3445)
+  Rendered books/new.html.erb within layouts/application (Duration: 10.8ms | Allocations: 3775)
+  Rendered layout layouts/application.html.erb (Duration: 12.6ms | Allocations: 4438)
+Completed 200 OK in 15ms (Views: 14.0ms | ActiveRecord: 0.0ms | Allocations: 4865)
+
+
