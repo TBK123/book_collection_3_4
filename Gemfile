@@ -85,3 +85,8 @@ group :test do
   gem "selenium-webdriver"
   gem "webdrivers"
 end
+
+
+gem 'devise'
+gem 'omniauth'
+gem 'omniauth-google-oauth2'
